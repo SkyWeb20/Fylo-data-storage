@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #0c122c;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    background-image: url(../image/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+
+main {
+    width: 920px;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fylo-section {
+    background-color: #1e2c69;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 1rem 7rem 1rem 1rem;
+    padding: 3rem 7rem 3rem 3rem;
+    margin: 0rem 0rem 8rem -3rem;
+}
+
+.fylo-logo {
+    margin-bottom: 2rem;
+}
+
+.icons img {
+    margin: 0 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #0c112e;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-left: -2rem;
+}
+
+.storage-info {
+    background-color: #1e2c69;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 50%;
+    display: block;
+    align-items: center;
+    position: relative;
+    margin: 0rem 0rem 4.5rem 0rem;
+}
+
+.storage-left-bubble {
+    background-color: #fff;
+    color: #0c122c;
+    padding: 1rem 2rem;
+    border-radius: 1rem 1rem 0rem 1rem;
+    font-weight: 700;
+    position: absolute;
+    top: -2rem;
+    right: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.storage-left-bubble:after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    right: 0px;
+    border-top: 20px solid #ffffff;
+    border-left: 20px solid transparent;
+    border-right: 0px solid transparent;
+}
+
+.storage-left-value {
+    font-size: 2rem;
+}
+
+.storage-left-label {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 1.5rem;
+    background-color: #151f55;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(to right, #ffa399, #fe695d);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.progress-values {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 0rem;
+}
+
+.progress-value {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url(../image/bg-mobile.png);
+        background-size: cover;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .fylo-section {
+        width: 80%;
+        margin: 0;
+        padding: 2rem;
+        border-radius: 1rem 7rem 1rem 1rem;
+    }
+
+    .icons {
+        margin-left: -rem;
+    }
+
+    .storage-info {
+        text-align: center;
+        width: 80%;
+        margin: 2rem 0;
+    }
+
+    .storage-left-bubble {
+        top: 9.5rem;
+        right: 50%;
+        transform: translateX(50%);
+        border-radius: 1rem;
+    }
+
+    .storage-left-bubble:after {
+        display: none;
+    }
+}
